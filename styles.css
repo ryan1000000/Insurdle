@@ -98,8 +98,8 @@ img {
   justify-content: center;
   align-content: center;
   flex-grow: 1;
-  grid-template-columns: repeat(5, 6em);
-  grid-template-rows: repeat(6, 6em);
+  grid-template-columns: repeat(6, 5em);
+  grid-template-rows: repeat(6, 5em);
   gap: .25em;
   margin-bottom: 12em;
   margin-top: 0;
