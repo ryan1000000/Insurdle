@@ -35,6 +35,16 @@ const targetWords = [
 ]
 
 const dictionary = [
+  'queens',
+  'framed',
+  'caster',
+  'crates',
+  'caters',
+  'amazed',
+  'lasers',
+  'insure',
+  'quiets',
+  'lifter',
   'abacus', 
 'abased', 
 'abated', 
