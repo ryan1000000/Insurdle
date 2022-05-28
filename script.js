@@ -2600,7 +2600,7 @@ function handleKeyPress(e) {
 
 function pressKey(key) { // add key to first tile in grid
   const activeTiles = getActiveTiles() // get array of active tiles
-  if (activeTiles.length >= WORD_LENGTH) return // make sure that user cannot keep typing after 5 letters
+  if (activeTiles.length >= WORD_LENGTH) return // make sure that user cannot keep typing after 6 letters
   const nextTile = guessGrid.querySelector(":not([data-letter])") // returns the first tile that doesn't have a value
   nextTile.dataset.letter = key.toLowerCase() // add the letter to the tile's dataset
   nextTile.textContent = key // make the html the key
@@ -2724,7 +2724,7 @@ function danceTiles(tiles) {
         },
         { once: true }
       )
-    }, (index * DANCE_ANIMATION_DURATION) / 5)
+    }, (index * DANCE_ANIMATION_DURATION) / 6)
   })
 }
 
