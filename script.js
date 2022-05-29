@@ -36,6 +36,8 @@ const targetWords = [
 ]
 
 const dictionary = [
+'smokes',
+'losers',
 'funder',
 'clowns',
 'basics',
