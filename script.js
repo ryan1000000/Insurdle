@@ -8532,13 +8532,13 @@ const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])") // get 
 function checkWinLose(guess, tiles) {
   if (guess === targetWord) {
     if (remainingTiles.length === 30) {  //quested it in one
-        showAlert("Amazing job. Have you considered a career in insurance?", 5000)
+        showAlert("Hmm... can I get an adjuster over here to check this score out? Suspiciously good..", 5000)
     }
     if (remainingTiles.length === 24) {  //quested it in 2
-        showAlert("Nicely done. I can see management potential in you!", 5000)
+        showAlert("Amazing job. Have you considered a career in insurance?", 5000)
     }
     if (remainingTiles.length === 18) {  //quested it in 3
-        showAlert("You did great. Now, back to work!", 5000)
+        showAlert("Nicely done. I can see management potential in you!", 5000)
     }
     if (remainingTiles.length === 12) {  //quested it in 4
         showAlert("You did it! But the world of insurance demands better than just average.", 5000)
