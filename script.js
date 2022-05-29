@@ -8556,8 +8556,8 @@ function checkWinLose(guess, tiles) {
     return
   }
   
-  
-  if (remainingTiles.length === 0) { // if no more remaining tiles
+  const remainingTiless = guessGrid.querySelectorAll(":not([data-letter])") // get all empty tiles
+  if (remainingTiless.length === 0) { // if no more remaining tiles
     showAlert("🚨INSURANCE FRAUD DETECTED!🚨")
     showAlert(`You can always try again, unlike the real Wordle!`, null)
     stopInteraction
