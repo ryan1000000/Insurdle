@@ -8530,7 +8530,7 @@ function shakeTiles(tiles) {
 
 
 function checkWinLose(guess, tiles) {
-  const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])") // get all empty tiles
+  console.log(remainingTiles) // = guessGrid.querySelectorAll(":not([data-letter])") // get all empty tiles
   if (guess === targetWord) {
     if (remainingTiles.length === 30) {  //quested it in one
         showAlert("Hmm... can I get an adjuster over here to check this score out? Suspiciously good..", 5000)
