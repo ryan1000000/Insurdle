@@ -37,6 +37,8 @@ const targetWords = [
 
 const dictionary = [
 'funder',
+'clowns',
+'basics',
 'quilts',
 'indent',
 'shocks',
