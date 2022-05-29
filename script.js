@@ -2740,7 +2740,7 @@ function shakeTiles(tiles) {
 
 function checkWinLose(guess, tiles) {
   if (guess === targetWord) {
-    showAlert("Niely done. Have you consider a career in insurance?", 5000)
+    showAlert("Nicely done. Have you consider a career in insurance?", 5000)
     danceTiles(tiles)
     
     stopInteraction()
