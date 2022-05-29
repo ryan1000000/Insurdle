@@ -37,6 +37,7 @@ const targetWords = [
 
 const dictionary = [
 'quilts',
+'indent',
 'shocks',
 'liners',
 'finder',
