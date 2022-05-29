@@ -8526,16 +8526,34 @@ function shakeTiles(tiles) {
   })
 }
 
+const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])") // get all empty tiles
+
 function checkWinLose(guess, tiles) {
   if (guess === targetWord) {
-    showAlert("Nicely done. Have you consider a career in insurance?", 5000)
+    if (remainingTiles.length === 30) {  //quested it in one
+        showAlert("Amazing job. Have you considered a career in insurance?", 5000)
+    }
+    if (remainingTiles.length === 24) {  //quested it in 2
+        showAlert("Nicely done. I can see management potential in you!", 5000)
+    }
+    if (remainingTiles.length === 18) {  //quested it in 3
+        showAlert("You did great. Now, back to work!", 5000)
+    }
+    if (remainingTiles.length === 12) {  //quested it in 4
+        showAlert("You did it! But the world of insurance demands better than just average.", 5000)
+    }
+    if (remainingTiles.length === 6) {  //quested it in 5
+        showAlert("Not bad, but looks like you could use a handbook refresher.", 5000)
+    }
+    if (remainingTiles.length === 0) {  //quested it in 6
+        showAlert("Yikes, that was close. Please ask your manager for some extra training.", 5000)
+    }
     danceTiles(tiles)
-    
+
     stopInteraction()
     return
   }
-
-  const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])") // get all empty tiles
+  
 
   if (remainingTiles.length === 0) { // if no more remaining tiles
     showAlert("🚨INSURANCE FRAUD DETECTED!🚨")
