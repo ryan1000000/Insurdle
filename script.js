@@ -8527,9 +8527,10 @@ function shakeTiles(tiles) {
   })
 }
 
-const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])") // get all empty tiles
+
 
 function checkWinLose(guess, tiles) {
+  const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])") // get all empty tiles
   if (guess === targetWord) {
     if (remainingTiles.length === 30) {  //quested it in one
         showAlert("Hmm... can I get an adjuster over here to check this score out? Suspiciously good..", 5000)
@@ -8555,7 +8556,7 @@ function checkWinLose(guess, tiles) {
     return
   }
   
-
+  const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])") // get all empty tiles
   if (remainingTiles.length === 0) { // if no more remaining tiles
     showAlert("🚨INSURANCE FRAUD DETECTED!🚨")
     showAlert(`You can always try again, unlike the real Wordle!`, null)
