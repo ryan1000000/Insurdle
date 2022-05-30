@@ -96,11 +96,11 @@ img {
 .guess-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(6, 5em);
-  grid-template-rows: repeat(6, 5em);
+  grid-template-columns: repeat(6, 5.5em);
+  grid-template-rows: repeat(6, 5.5em);
   gap: .25em;
-  margin-bottom: 1em;
-  margin-top: 0;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
 }
 
 .disable-dbl-tap-zoom {
