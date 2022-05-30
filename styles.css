@@ -31,6 +31,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1.5em;
 }
 
 .keyboard {
@@ -96,8 +97,8 @@ img {
 .guess-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(6, 5.5em);
-  grid-template-rows: repeat(6, 5.5em);
+  grid-template-columns: repeat(6, 5.75em);
+  grid-template-rows: repeat(6, 5.75em);
   gap: .25em;
   margin-bottom: 1.5em;
   margin-top: 1em;
