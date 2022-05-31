@@ -27,6 +27,7 @@ const targetWords = [
   "street",
   "bumper",
   "fender",
+  "bender",
   "ticket",
   "liable",
   "rebate",
@@ -45,6 +46,7 @@ const targetWords = [
 
 const dictionary = [
 "adjust",
+  "bender",
   "damage",
   "policy",
   "clause",
